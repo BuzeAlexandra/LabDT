@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <meta charset="utf-8">
+    <title>Chat</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <ul>
+        <li v-for="message in messages">Write a message:</li>
+      </ul>
+      <input type="text" v-model="message" placeholder="Write a message">
+      <button @click="sendMessage">Send</button>
+    </div>
+    <script src="Client.js"></script>
+  </body>
+</html>
